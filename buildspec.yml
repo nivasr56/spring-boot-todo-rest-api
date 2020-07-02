@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      runtime: openjdk8
+      java: openjdk8
     commands:
       - echo INTALL
   pre_build:
