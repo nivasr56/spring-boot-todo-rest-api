@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      runtime: openjdk8
+    commands:
+      - echo INTALL
+  pre_build:
+    commands:
+      - echo PRE_BUILD
+  build:
+    commands:
+      - mvn package
+      - echo BUILD
+  post_build:
+    commands:
+      - echo POST_BUILD
+
+artifacts:
+  files:
+    - target/spring-boot-todo-rest-api-0.0.1-SNAPSHOT.jar
